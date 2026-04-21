@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Колесо Фортуны</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="game-container">
+    <canvas id="wheelCanvas" width="800" height="800"></canvas>
+    <div id="slotMachineLever" class="lever-container">
+        <div class="lever-base"></div>
+        <div class="lever-stick" id="leverStick"></div>
+        <div class="handle-grip" id="handleGrip"></div>
+    </div>
+        </div>
+    </div>
+</div>
+
+    <!-- Модальное окно с результатом -->
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <img id="modalImage" class="modal-image" src="" alt="Поздравление">
+            <div class="modal-description" id="modalDescription"></div>
+            <button id="closeModalBtn" class="modal-close-btn">Отлично!</button>
+        </div>
+    </div>
+    <!-- Лучи прожекторов для джекпота -->
+    <div id="lightBeams" class="light-beams">
+        <div class="beam beam-left"></div>
+        <div class="beam beam-right"></div>
+    </div>
+    <!-- Огонь внизу -->
+    <div id="fireEffect" class="fire-effect"></div>
+    <!-- Красноватый оверлей -->
+    <div id="redOverlay" class="red-overlay"></div>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.4/dist/confetti.browser.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
