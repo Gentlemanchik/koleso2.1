@@ -524,7 +524,7 @@ function spinWheel() {
     spinSound.play().catch(e => console.log('Ошибка воспроизведения:', e));
     
     const spinAngle = 70 + Math.random() * 25; // Кол-во оборотов
-    const duration = 8000; //Время, в течении которого крутится колесо
+    const duration = 1000; //Время, в течении которого крутится колесо
     const startTime = performance.now();
     const startRotation = currentRotation;
     
